@@ -1,0 +1,92 @@
+:root{
+    --background-color: #ffd500;
+    --bs-primary-rgb: #000000;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--bs-primary-rgb);
+    font-weight: 300;
+    font-size: 1.2rem;
+    background-image: url("../public/images/noise-bg.png");
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'unbounded', cursive;
+    font-weight: 800;
+}
+
+.container-fluid-custom{
+    max-width: 1600px;
+}
+ 
+.btn{
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    border-radius: 2rem;
+    margin-right: 10px;
+}
+
+.btn-primary {
+   
+   background-color: #12296c;
+   box-shadow: #0043a8;
+   border-radius: 2rem;
+   padding-left: 1.6rem;
+   padding-right: 1.6rem;
+   
+
+}
+
+.btn-outline-primary{
+    outline: #12296c;
+}
+
+/* Home */
+@media (min-width: 1200px) {
+    .home {
+        background-image: 
+            url('../images/human-1.svg'), 
+            url('../images/human-2.svg'), 
+            url('../images/noise-bg.png');
+        
+        /* Adjusting the sizes for the first two images and setting the last one to auto */
+        background-size: 
+            400px 600px,  /* First image size (width x height) */
+            350px 600px,  /* Second image size (width x height) */
+            auto;         /* Third image can remain as auto */
+
+        background-position: 
+            left bottom, 
+            right bottom, 
+            top;
+
+        background-repeat: 
+            no-repeat, 
+            no-repeat, 
+            repeat;
+        mix-blend-mode: multiply;  
+        
+        /* Ensure the container has the desired height */
+        height: 600px;  /* Setting the height of the container */
+    }
+}
+
+  
+
+
+
+.home-title::before{
+    content: url("../images/stars.svg");
+    position: absolute;
+    top: -30px;
+    left: -50px;
+
+}
+.home-title::after{
+    content: url("../images/stars.svg");
+    position: absolute;
+    right: -50px;
+    bottom: -30px;
+}
