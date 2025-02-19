@@ -21,7 +21,8 @@
     "mongodb": "^6.8.0",
     "mongoose": "^8.6.0",
     "passport": "^0.7.0",
-    "passport-google-oauth": "^2.0.0"
+    "passport-google-oauth": "^2.0.0",
+    "vercel": "^41.1.4"
   },
   "devDependencies": {
     "nodemon": "^3.1.4",
