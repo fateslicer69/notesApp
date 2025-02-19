@@ -9,7 +9,7 @@ passport.use(
     {
       clientID: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-      callbackURL: process.env.GOOGLE_CALLBACK_URL, // Ensure this matches the Google Console
+     // Ensure this matches the Google Console
       callbackURL: process.env.GOOGLE_CALLBACK_URL_PROD
     },
     async function (accessToken, refreshToken, profile, done) {
